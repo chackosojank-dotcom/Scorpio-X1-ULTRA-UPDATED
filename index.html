@@ -1,85 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SCORPIO X1 ULTRA — V10</title>
-<meta name="description" content="Scorpio X1 Ultra V10 concept website">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070712">
+  <title>Scorpio — Beyond Limits</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="nav">
-  <a class="brand" href="#top">SCORPIO<span>™</span></a>
-  <button class="menu" aria-label="Open menu">☰</button>
-  <nav><a href="#phone">X1 Ultra</a><a href="#specs">Specs</a><a href="#roadmap">Roadmap</a><a href="#notify">Notify Me</a></nav>
-</header>
+  <div class="app-shell">
+    <div class="app-glow"></div>
 
-<main id="top">
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">SCORPIO TECHNOLOGIES • V10 CONCEPT</p>
-    <h1>BUILT TO<br><em>BREAK THE ORDINARY.</em></h1>
-    <p class="lead">The Scorpio X1 Ultra is a premium gaming-phone concept built around performance, immersion and a design from tomorrow.</p>
-    <div class="actions"><a class="btn primary" href="#phone">Explore X1 Ultra</a><a class="btn ghost" href="#roadmap">See roadmap</a></div>
-    <p class="status">● CONCEPT PROJECT • TARGET REVEAL: AUGUST 2027</p>
+    <section class="screen welcome-screen" id="welcome">
+      <div class="welcome-scorpion">♏</div>
+      <div class="brand">SCORPIO</div>
+      <p class="tagline">Beyond Limits</p>
+      <p class="subtagline">A Smarter Tomorrow</p>
+      <p class="intro">Discover. Play. Create. Work.<br>All in One Scorpio.</p>
+      <div class="welcome-actions">
+        <button class="primary-btn" data-go="home">Get Started</button>
+        <button class="ghost-btn" data-go="home">Sign In</button>
+      </div>
+    </section>
+
+    <section class="screen" id="home">
+      <header class="topbar">
+        <div class="brand brand-small"><span class="scorpion-mark">♏</span> SCORPIO</div>
+        <button class="icon-btn" aria-label="Profile" data-go="profile">●</button>
+      </header>
+
+      <main class="content">
+        <article class="hero-card">
+          <div>
+            <span class="eyebrow">NEW FLAGSHIP</span>
+            <h1>Scorpio X1 Ultra</h1>
+            <p>Engineered for a Greater You.</p>
+            <button class="small-primary" data-go="phones">Explore Now</button>
+          </div>
+          <div class="phone-art x1">SCORPIO</div>
+        </article>
+
+        <div class="dots"><span class="active"></span><span></span><span></span><span></span></div>
+
+        <div class="quick-grid">
+          <button data-go="phones"><span>▣</span>Phones</button>
+          <button data-go="gaming"><span>◈</span>Gaming</button>
+          <button data-go="services"><span>✦</span>AI</button>
+          <button data-go="services"><span>☁</span>Cloud</button>
+          <button data-go="services"><span>⌂</span>Lifestyle</button>
+          <button data-go="services"><span>▤</span>Work</button>
+          <button data-go="services"><span>♡</span>Health</button>
+          <button data-go="services"><span>＋</span>More</button>
+        </div>
+
+        <div class="section-heading"><h2>Latest from Scorpio</h2><button data-go="phones">View All</button></div>
+        <article class="latest-card">
+          <div class="mini-phone"></div>
+          <div><span class="pill">NEW</span><h3>Scorpio X1 Ultra</h3><p>Next-Gen Performance<br>Next-Gen You</p></div>
+        </article>
+      </main>
+      <nav class="bottom-nav">
+        <button class="selected" data-go="home">⌂<small>Home</small></button>
+        <button data-go="phones">▣<small>Devices</small></button>
+        <button data-go="gaming">◈<small>Gaming</small></button>
+        <button data-go="services">✦<small>Services</small></button>
+        <button data-go="profile">●<small>Profile</small></button>
+      </nav>
+    </section>
+
+    <section class="screen page-screen" id="phones">
+      <header class="page-top"><button class="back" data-go="home">‹</button><h2>Scorpio Phones</h2><button>⌕</button></header>
+      <main class="content">
+        <div class="page-intro"><h1>Power. Speed. Intelligence.</h1><p>Discover the Scorpio smartphone range designed for every lifestyle.</p></div>
+        <div class="tabs"><button class="active">All</button><button>Flagship</button><button>Gaming</button><button>Lite</button></div>
+
+        <article class="product-card">
+          <div class="product-phone x1">SCORPIO</div>
+          <div class="product-info"><span class="pill">FLAGSHIP</span><h2>Scorpio X1 Ultra</h2><p>Ultimate Performance.<br>Infinite Possibilities.</p><ul><li>Next-gen flagship chipset</li><li>200MP Ultra Camera</li><li>6.8″ AMOLED 144Hz</li><li>6000mAh battery</li></ul><button class="small-primary" data-go="x1">Learn More</button></div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-phone gaming">SCORPIO</div>
+          <div class="product-info"><span class="pill cyan">GAMING</span><h2>Scorpio G1 Pro</h2><p>Built for Gamers.<br>Made for Victory.</p><ul><li>High-performance gaming platform</li><li>144Hz gaming display</li><li>5200mAh battery</li><li>Game Turbo AI</li></ul><button class="outline-btn" data-go="gaming">Learn More</button></div>
+        </article>
+      </main>
+      <nav class="bottom-nav"><button data-go="home">⌂<small>Home</small></button><button class="selected" data-go="phones">▣<small>Devices</small></button><button data-go="gaming">◈<small>Gaming</small></button><button data-go="services">✦<small>Services</small></button><button data-go="profile">●<small>Profile</small></button></nav>
+    </section>
+
+    <section class="screen page-screen" id="services">
+      <header class="page-top"><button class="back" data-go="home">‹</button><h2>Scorpio Services</h2><button>⌕</button></header>
+      <main class="content">
+        <article class="service-hero"><div><h1>Smart.<br>Seamless.<br>Scorpio.</h1><p>Powering your digital life with intelligent services.</p></div><div class="brain">✦</div></article>
+        <h3 class="group-title">AI Assistant</h3><button class="service-card"><span class="service-icon">✦</span><span><b>Scorpio AI</b><small>Your personal AI assistant for work, study, creativity and more.</small></span><i>›</i></button>
+        <h3 class="group-title">Cloud Storage</h3><button class="service-card"><span class="service-icon">☁</span><span><b>Scorpio Cloud</b><small>Store, sync and access your data anywhere, anytime.</small></span><i>›</i></button>
+        <h3 class="group-title">Gaming Hub</h3><button class="service-card"><span class="service-icon">◈</span><span><b>Scorpio Game Space</b><small>Play, compete and connect in the ultimate gaming environment.</small></span><i>›</i></button>
+        <h3 class="group-title">Lifestyle</h3><button class="service-card"><span class="service-icon">♡</span><span><b>Scorpio Life</b><small>Health, fitness, travel and more — all in one app.</small></span><i>›</i></button>
+      </main>
+      <nav class="bottom-nav"><button data-go="home">⌂<small>Home</small></button><button data-go="phones">▣<small>Devices</small></button><button data-go="gaming">◈<small>Gaming</small></button><button class="selected" data-go="services">✦<small>Services</small></button><button data-go="profile">●<small>Profile</small></button></nav>
+    </section>
+
+    <section class="screen page-screen" id="gaming">
+      <header class="page-top"><button class="back" data-go="home">‹</button><h2>Scorpio Game Space</h2><button>⌕</button></header>
+      <main class="content">
+        <article class="gaming-banner"><span class="eyebrow">SCORPIO GAMING</span><h1>Play beyond limits.</h1><p>Performance tools, games and community in one place.</p><button class="small-primary">Enter Game Space</button></article>
+        <div class="stat-grid"><div><b>144</b><small>Hz Display</small></div><div><b>AI</b><small>Game Turbo</small></div><div><b>24/7</b><small>Cloud Sync</small></div></div>
+        <h3 class="group-title">Gaming tools</h3>
+        <button class="service-card"><span class="service-icon">⚡</span><span><b>Performance Mode</b><small>Optimize your gaming session with one tap.</small></span><i>›</i></button>
+        <button class="service-card"><span class="service-icon">🎮</span><span><b>Game Library</b><small>Keep your favorite games together.</small></span><i>›</i></button>
+      </main>
+      <nav class="bottom-nav"><button data-go="home">⌂<small>Home</small></button><button data-go="phones">▣<small>Devices</small></button><button class="selected" data-go="gaming">◈<small>Gaming</small></button><button data-go="services">✦<small>Services</small></button><button data-go="profile">●<small>Profile</small></button></nav>
+    </section>
+
+    <section class="screen page-screen" id="profile">
+      <header class="page-top"><button class="back" data-go="home">‹</button><h2>Scorpio Profile</h2><button>⚙</button></header>
+      <main class="content profile-content">
+        <div class="avatar">S</div><h1>Welcome to Scorpio</h1><p>Sign in to sync your Scorpio ecosystem.</p>
+        <button class="primary-btn">Sign In</button><button class="ghost-btn">Create Account</button>
+      </main>
+      <nav class="bottom-nav"><button data-go="home">⌂<small>Home</small></button><button data-go="phones">▣<small>Devices</small></button><button data-go="gaming">◈<small>Gaming</small></button><button data-go="services">✦<small>Services</small></button><button class="selected" data-go="profile">●<small>Profile</small></button></nav>
+    </section>
   </div>
-  <div class="phone-stage">
-    <div class="phone"><div class="camera"><i></i><i></i></div><div class="scorpion">♏</div></div>
-  </div>
-</section>
-
-<section class="section split" id="phone">
-  <div>
-    <p class="eyebrow">01 / THE MACHINE</p>
-    <h2>Designed like a<br><em>flagship from tomorrow.</em></h2>
-    <p>V10 keeps the Scorpio identity sharp and clean: a slim silhouette, dual-camera concept, signature scorpion mark and gaming-first personality.</p>
-    <div class="chips"><span>SLIM PROFILE</span><span>GAMING DNA</span><span>PREMIUM CONCEPT</span></div>
-  </div>
-  <div class="card"><div class="mini-phone"></div><b>SCORPIO X1 ULTRA</b><small>V10 DESIGN STUDY</small></div>
-</section>
-
-<section class="section" id="specs">
-  <p class="eyebrow">02 / CONCEPT SPEC SHEET</p>
-  <h2>Ideas first.<br><em>Reality next.</em></h2>
-  <p>Concept targets only — final production specifications will be decided after engineering and testing.</p>
-  <div class="grid">
-    <article><span>DISPLAY</span><strong>Ultra-smooth OLED</strong><small>High refresh-rate concept</small></article>
-    <article><span>PERFORMANCE</span><strong>Flagship-class SoC</strong><small>Gaming-focused architecture</small></article>
-    <article><span>CAMERA</span><strong>Dual-camera system</strong><small>V10 design direction</small></article>
-    <article><span>SOFTWARE</span><strong>Ultra Game Launcher</strong><small>Gaming interface concept</small></article>
-    <article><span>THERMALS</span><strong>Advanced cooling</strong><small>Designed for sustained gaming</small></article>
-    <article><span>BUILD</span><strong>Premium slim body</strong><small>Materials to be finalized</small></article>
-  </div>
-</section>
-
-<section class="section">
-  <div class="launcher-box">
-    <p class="eyebrow">03 / ULTRA GAME LAUNCHER</p>
-    <h2>ONE TAP.<br><em>FULL POWER.</em></h2>
-    <p>Instant game launch, performance controls and a clean gaming HUD.</p>
-    <div class="launcher-ui"><div>ULTRA MODE<b>ON</b></div><div>FPS<b>120</b></div><div>THERMAL<b>OPTIMIZED</b></div></div>
-  </div>
-</section>
-
-<section class="section" id="roadmap">
-  <p class="eyebrow">04 / THE MISSION</p>
-  <h2>Concept → Prototype → <em>Reality.</em></h2>
-  <div class="timeline">
-    <div><b>2026</b><span>V10 concept, website and community</span></div>
-    <div><b>EARLY 2027</b><span>Design refinement and prototype planning</span></div>
-    <div class="active"><b>AUG 2027</b><span>Target public Scorpio X1 Ultra concept reveal</span></div>
-    <div><b>AFTER REVEAL</b><span>Feedback, prototype decisions and next-generation planning</span></div>
-  </div>
-</section>
-
-<section class="notify" id="notify">
-  <p class="eyebrow">05 / STAY IN THE LOOP</p>
-  <h2>Want to see<br><em>what comes next?</em></h2>
-  <p>Join the early-interest list for future Scorpio X1 Ultra updates.</p>
-  <form id="notifyForm"><input id="email" type="email" placeholder="Your email address" required><button class="btn primary">Notify Me</button></form>
-  <div id="msg"></div>
-</section>
-</main>
-
-<footer><b>SCORPIO™</b><span>X1 ULTRA • V10 CONCEPT</span><small>© 2026–2027 Scorpio Technologies Concept Project. Not a production phone.</small></footer>
-<script src="script.js"></script>
-</body></html>
+  <script src="script.js"></script>
+</body>
+</html>
